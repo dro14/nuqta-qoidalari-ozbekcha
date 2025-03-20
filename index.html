@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuqta - Qoidalar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #42a5f5 0%, #2196f3 100%);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 5px solid #1976d2;
+        }
+        nav {
+            background: #2196f3;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+        nav a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        h1 {
+            color: #fff;
+        }
+        h2, h3 {
+            color: #2196f3;
+        }
+        section {
+            background: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        .date-label {
+            background-color: #e3f2fd;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .content-block {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .content-block:last-child {
+            border-bottom: none;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #2196f3;
+            margin-bottom: 5px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2196f3;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .back-to-top:hover {
+            background: #42a5f5;
+            transform: translateY(-3px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .toc {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        .toc h4 {
+            margin-top: 0;
+        }
+        .toc ul {
+            padding-left: 20px;
+        }
+        .toc a {
+            color: #2196f3;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuqta - Qoidalar</h1>
+        <p>Huquq va majburiyatlaringiz to‘g‘risidagi muhim ma’lumot</p>
+    </header>
+    <nav>
+        <a href="#terms">Foydalanish shartlari</a>
+        <a href="#privacy">Maxfiylik siyosati</a>
+        <a href="#contact">Biz bilan bog‘lanish</a>
+    </nav>
+    <div class="container">
+        <section id="terms">
+            <h2>Foydalanish shartlari</h2>
+            <div class="date-label"><strong>Oxirgi tahrir: 20-mart 2025</strong></div>
+            
+            <div class="toc">
+                <h4>Mundarija</h4>
+                <ul>
+                    <li><a href="#terms-1">Kirish</a></li>
+                    <li><a href="#terms-2">Foydalanuvchi hisoblari</a></li>
+                    <li><a href="#terms-3">Foydalanuvchi kontenti</a></li>
+                    <li><a href="#terms-4">Taqiqlangan xulq-atvor</a></li>
+                    <li><a href="#terms-5">Hisobni bekor qilish</a></li>
+                    <li><a href="#terms-6">Kafolatlarni rad etish</a></li>
+                    <li><a href="#terms-7">Javobgarlikni cheklash</a></li>
+                    <li><a href="#terms-8">Shartlardagi o‘zgarishlar</a></li>
+                    <li><a href="#terms-9">Foydalanuvchi majburiyatlari</a></li>
+                    <li><a href="#terms-10">Intellektual mulk</a></li>
+                    <li><a href="#terms-11">Tashqi xizmatlar</a></li>
+                    <li><a href="#terms-12">Ilovaga oid qoidalar</a></li>
+                </ul>
+            </div>
+
+            <div id="terms-1" class="content-block">
+                <h3>1. Kirish</h3>
+                <p>ChuqurTech ("biz," "bizni" yoki "bizning") tomonidan taqdim etilgan Nuqta ijtimoiy tarmoq ilovasiga xush kelibsiz. Nuqta ilovasidan foydalanish yoki unga kirishingiz bilan siz ushbu Xizmat shartlarini ("Shartlar") qabul qilgan hisoblanasiz. Agar mazkur shartlarga rozi bo‘lmasangiz, iltimos, ilovadan foydalanmang.</p>
+                <p>Ushbu Shartlar sizning Nuqta ilovasidan va unga bog‘liq barcha xizmatlardan foydalanishingiz bo‘yicha siz bilan ChuqurTech o‘rtasidagi qonuniy majburiyatli kelishuvni tashkil etadi. Iltimos, ularni e’tibor bilan o‘qib chiqing.</p>
+            </div>
+
+            <div id="terms-2" class="content-block">
+                <h3>2. Foydalanuvchi hisoblari</h3>
+                <p>Nuqtadan foydalanish uchun siz kamida 13 yoshda bo‘lishingiz shart. Hisob ochishda to‘g‘ri ma’lumotlarni kiritishga va kirish ma’lumotlaringizni xavfsiz saqlashga rozilik bildirasiz. Hisobingiz orqali amalga oshirilgan barcha faoliyat uchun siz mas’ulsiz.</p>
+                <p>Biz o‘z ixtiyorimizga ko‘ra xizmat ko‘rsatishni rad etish, hisoblarni yopish yoki tarkibni olib tashlash huquqini o‘zimizda saqlaymiz. Bizning aniq ruxsatimizni olmasdan turib, bir nechta hisob ochishingiz yoki hisobingizni boshqa shaxsga o‘tkazishingiz mumkin emas.</p>
+            </div>
+
+            <div id="terms-3" class="content-block">
+                <h3>3. Foydalanuvchi kontenti</h3>
+                <p>Siz joylagan kontentning (masalan, xabarlar, profil rasmlari) egalik huquqini o‘zingizda saqlab qolasiz. Kontent joylaganingizda, ChuqurTech kompaniyasiga Nuqta ilovasi doirasida kontentingizdan foydalanish, ko‘rsatish va tarqatish uchun butun dunyo miqyosidagi, eksklyuziv bo‘lmagan, bepul litsenziyani taqdim etasiz. Ushbu Shartlarga zid bo‘lgan kontentni olib tashlash huquqini o‘zimizda saqlab qolamiz.</p>
+                <p>Ushbu litsenziya sizning kontentingizni Xizmatning boshqa foydalanuvchilariga taqdim etishimizga hamda undan Nuqtaning faoliyat maqsadlarida foydalanishimizga ruxsat beradi. Biz sizning kontentingizga nisbatan hech qanday mulkiy huquqlarni da’vo qilmaymiz va ushbu Shartlarda sizning kontentingizdan foydalanish va uni ishlatish huquqlaringizni cheklaydigan hech narsa yo‘q.</p>
+            </div>
+
+            <div id="terms-4" class="content-block">
+                <h3>4. Taqiqlangan xulq-atvor</h3>
+                <p>Sizga quyidagilar taqiqlanadi: (a) haqoratli, noqonuniy yoki nomaqbul tarkibni joylashtirish; (b) boshqalarga ozor berish yoki zarar yetkazish; (c) Nuqta tizimlariga ruxsatsiz kirishga urinish; yoki (d) amaldagi qonunlarni buzish.</p>
+                <p>Bundan tashqari, siz quyidagilarni amalga oshirmaslikka rozilik bildirasiz:</p>
+                <ul>
+                    <li>Biror shaxs yoki tashkilot nomidan o‘zingizni tanishtirish, yoxud biror shaxs yoki tashkilot bilan aloqadorligingiz haqida yolg‘on ma’lumot berish yoki noto‘g‘ri taqdim etish</li>
+                    <li>Xizmatdan har qanday noqonuniy maqsadda yoki mahalliy, davlat, milliy yoxud xalqaro qonunlarni buzadigan tarzda foydalanish taqiqlanadi</li>
+                    <li>Xizmatga yoki unga ulangan server va tarmoqlarning ishlashiga xalaqit berish yoki to‘sqinlik qilish</li>
+                    <li>Zo‘ravonlik, yalang‘och, qisman yalang‘och, kamsituvchi, qonunga xilof, nafrat qo‘zg‘atuvchi, pornografik yoki shahvoniy mazmundagi kontentlarni joylashtirish</li>
+                    <li>Nuqta foydalanuvchilariga keraksiz xabarlar, sharhlar yoki spam-materiallar yaratish yoxud jo‘natish</li>
+                    <li>Xizmatdan ma’lumot yig‘ish yoki u bilan boshqacha tarzda muloqot qilish uchun avtomatlashtirilgan dasturlardan foydalanish</li>
+                </ul>
+            </div>
+
+            <div id="terms-5" class="content-block">
+                <h3>5. Hisobni bekor qilish</h3>
+                <p>Ushbu shartlarni buzganingiz taqdirda hisobingiz vaqtinchalik to‘xtatilishi yoki butunlay bekor qilinishi mumkin. Hisob bekor qilinishi bilan Nuqta xizmatidan foydalanishni zudlik bilan to‘xtatishingiz shart.</p>
+                <p>Hisobingiz tugatilganidan so‘ng, sizning kontentingiz boshqa foydalanuvchilarga ko‘rinib turishi mumkin. Biz hisobingiz yopilganidan keyin sizga biron-bir kontentni qaytarib berishga majbur emasmiz. Ushbu Shartlarning mohiyatiga ko‘ra tugatilishdan keyin ham amal qilishi kerak bo‘lgan barcha qoidalari, jumladan mulkiy huquqlar, kafolatlardan voz kechish va javobgarlikni cheklash to‘g‘risidagi qoidalar o‘z kuchida qoladi.</p>
+            </div>
+
+            <div id="terms-6" class="content-block">
+                <h3>6. Kafolatlarni rad etish</h3>
+                <p>Nuqta hech qanday kafolatlarni taqdim etmasdan, "bor ko‘rinishida" taqdim etiladi. Biz xizmatimizning uzluksiz yoki xatosiz bo‘lishini kafolatlay olmaymiz.</p>
+                <p>Qonun doirasida ruxsat etilgan eng yuqori darajada, ChuqurTech savdo-sotiqqa yaroqlilik, ma’lum bir maqsadga muvofiqlik va huquqbuzarlikka yo‘l qo‘ymaslik bilan bog‘liq barcha ochiq yoki nazarda tutilgan kafolatlardan voz kechadi. Biz Xizmatning yoki undagi materiallarning aniqligi, ishonchliligi, to‘liqligi yoki o‘z vaqtida taqdim etilishi bo‘yicha hech qanday kafolat bermaymiz.</p>
+            </div>
+
+            <div id="terms-7" class="content-block">
+                <h3>7. Javobgarlikni cheklash</h3>
+                <p>ChuqurTech qonun tomonidan ruxsat etilgan darajada, sizning Nuqtadan foydalanishingiz natijasida yuzaga keladigan bilvosita, tasodifiy yoki oqibatli zararlar uchun javobgar hisoblanmaydi.</p>
+                <p>ChuqurTech har qanday va barcha javobgarlikni rad etadi. Nuqtadan foydalanishingiz natijasida yuzaga kelgan har qanday to‘g‘ridan-to‘g‘ri yoki bilvosita zarar faqat sizning mas’uliyatingizdir. Siz ilovadan o‘z xavf-xataringiz ostida foydalanayotganingizni tan olasiz va bunga rozilik bildirasiz. ChuqurTech sizga yetkazilgan har qanday turdagi yo‘qotish yoki zarar uchun, jumladan, lekin bular bilan cheklanmagan holda, foyda yo‘qotilishi, biznes faoliyatining uzilishi, ma’lumotlarning yo‘qolishi yoki boshqa har qanday moddiy zarar uchun hech qanday javobgarlikni o‘z zimmasiga olmaydi.</p>
+            </div>
+
+            <div id="terms-8" class="content-block">
+                <h3>8. Shartlardagi o‘zgarishlar</h3>
+                <p>Biz ushbu Shartlarga o‘zgartirish kiritishimiz mumkin va bunday holatda sizni ilova yoki mazkur sahifa orqali xabardor qilamiz. O‘zgartirishlar kiritilganidan so‘ng xizmatdan foydalanishni davom ettirishingiz, ushbu shartlarni qabul qilganingizni anglatadi.</p>
+                <p>Ushbu Shartlarni vaqti-vaqti bilan ko‘rib chiqib, o‘zgarishlardan xabardor bo‘lish sizning zimmangizda. Agar o‘zgartirilgan shartlarga rozi bo‘lmasangiz, Nuqtadan foydalanishni darhol to‘xtatishingiz shart.</p>
+            </div>
+
+            <div id="terms-9" class="content-block">
+                <h3>9. Foydalanuvchi majburiyatlari</h3>
+                <p>Nuqta foydalanuvchisi sifatida siz o‘z hisobingiz ma’lumotlarining maxfiyligini ta’minlash hamda hisobingiz doirasida amalga oshiriladigan barcha harakatlar uchun mas’ulsiz. Hisobingizdan ruxsatsiz foydalanish holatlari aniqlangan taqdirda, bu haqda bizni darhol xabardor qilishga rozilik bildirasiz.</p>
+                <p>Shuningdek, Xizmatdan foydalanish imkoniyatini olish ham sizning zimmangizda bo‘lib, buning uchun uchinchi tomon to‘lovlari (masalan, Internet provayder yoki efir vaqti uchun to‘lovlar) talab etilishi mumkin. Bunday to‘lovlar, shu jumladan reklamalarni namoyish etish yoki yetkazib berish bilan bog‘liq barcha to‘lovlar uchun siz mas’ulsiz.</p>
+            </div>
+
+            <div id="terms-10" class="content-block">
+                <h3>10. Intelektual mulk</h3>
+                <p>Nuqta nomi, logotipi va shuningdek, ularga aloqador barcha nomlar, logotiplar, mahsulot va xizmat nomlari, dizaynlar hamda shiorlar ChuqurTech yoki uning hamkor tashkilotlarining savdo belgilari hisoblanadi. Bizning oldindan berilgan yozma ruxsatimizni olmasdan turib, bunday belgilardan foydalanishingiz mumkin emas.</p>
+                <p>Xizmatdagi boshqa barcha nomlar, logotiplar, mahsulot va xizmat nomlari, dizaynlar hamda shiorlar o‘z egalarining savdo belgilaridir. Ushbu Xizmat uchinchi shaxslarga tegishli yoki ulardan litsenziyalangan tarkibni o‘z ichiga olishi mumkin. Bunday uchinchi tomon tarkibi va u bilan bog‘liq barcha intellektual mulk huquqlari tegishli uchinchi shaxslarga mansub hisoblanadi.</p>
+            </div>
+
+            <div id="terms-11" class="content-block">
+                <h3>11. Tashqi xizmatlar</h3>
+                <p>Nuqta ChuqurTech egalik qilmaydigan yoki nazorat qilmaydigan uchinchi tomon veb-saytlari yoki xizmatlariga havolalarni o‘z ichiga olishi mumkin. Biz bunday uchinchi tomon veb-saytlari yoki xizmatlarining mazmuni, maxfiylik siyosatlari yoki amaliyotlari ustidan hech qanday nazoratga ega emasmiz va ular uchun javobgarlikni o‘z zimmamizga olmaymiz.</p>
+                <p>You acknowledge and agree that ChuqurTech shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.</p>
+            </div>
+
+            <div id="terms-12" class="content-block">
+                <h3>12. Ilovaga oid qoidalar</h3>
+                <p>Nuqta Apple App Store va Google Play Store orqali tarqatiladi. Nuqtani yuklab olish bilan siz barcha tegishli uchinchi tomon kelishuv shartlariga, shu jumladan, tegishli ilova do‘konlarining shartlariga rioya qilishga rozilik bildirasiz.</p>
+                <p><strong>Ilovaning doimiyligi:</strong> Biz Nuqtaning doimo mavjud bo‘lishini yoki uzilishlar va xatolardan xoli ishlashini kafolatlay olmaymiz. Biznes va operatsion sabablarga ko‘ra, ilovaning barcha qismini yoki uning ma’lum bir qismini vaqtincha to‘xtatishimiz, olib tashlashimiz yoki foydalanishni cheklashimiz mumkin.</p>
+                <p><strong>Qurilma mosligi:</strong> Nuqta xizmatidan foydalanish uchun qurilmangiz zarur minimal talablarga javob berishi siz zimmaningizdadir. Qurilmangiz operatsion tizimini doimo eng so‘nggi versiyaga yangilab turishingizni maslahat beramiz.</p>
+            </div>
+        </section>
+
+        <section id="privacy">
+            <h2>Maxfiylik siyosati</h2>
+            <div class="date-label"><strong>Oxirgi tahrir: 20-mart 2025</strong></div>
+            
+            <div class="toc">
+                <h4>Mundarija</h4>
+                <ul>
+                    <li><a href="#privacy-1">Kirish</a></li>
+                    <li><a href="#privacy-2">Biz yig‘adigan ma’lumotlar</a></li>
+                    <li><a href="#privacy-3">Ma’lumotlaringizdan qanday foydalanamiz</a></li>
+                    <li><a href="#privacy-4">Ma’lumotlaringizni ulashish</a></li>
+                    <li><a href="#privacy-5">Tanlovlaringiz va nazorat imkoniyatlaringiz</a></li>
+                    <li><a href="#privacy-6">Xavfsizlik</a></li>
+                    <li><a href="#privacy-7">Bolalar maxfiyligi</a></li>
+                    <li><a href="#privacy-8">Xalqaro ma’lumotlarni uzatish</a></li>
+                    <li><a href="#privacy-9">Ushbu siyosatga kiritiladigan o‘zgartirishlar</a></li>
+                    <li><a href="#privacy-10">Ma’lumotlarni himoya qilish choralari</a></li>
+                    <li><a href="#privacy-11">Ma’lumotlarni saqlash muddati</a></li>
+                    <li><a href="#privacy-12">App Store va Google Play ma’lumotlardan foydalanish amaliyotlari</a></li>
+                </ul>
+            </div>
+
+            <div id="privacy-1" class="content-block">
+                <h3>1. Kirish</h3>
+                <p>ChuqurTech ("biz," "bizni" yoki "bizning") Nuqta nomli ijtimoiy tarmoq ilovasini boshqaradi. Ushbu Maxfiylik siyosati sizning ma’lumotlaringizni qanday to‘plashimiz, ulardan foydalanishimiz va ularni qanday himoya qilishimizni tushuntirib beradi.</p>
+                <p>Biz sizning shaxsiy ma’lumotlaringizni himoya qilishga va ma’lumotlaringizni ochiq hamda shaffof tarzda boshqarishga sodiqmiz. Ushbu siyosat siz Nuqtadan foydalanganingizda yoki biz bilan boshqacha tarzda aloqaga chiqqaningizda to‘playdigan ma’lumotlarimizga nisbatan amal qiladi.</p>
+            </div>
+
+            <div id="privacy-2" class="content-block">
+                <h3>2. Biz yig‘adigan ma’lumotlar</h3>
+                <p>Biz quyidagilarni to‘playmiz: (a) Elektron pochta manzili (Google yoki Apple hisobi orqali); (b) Profil ma’lumotlari (ism, foydalanuvchi nomi, tug‘ilgan sana, biografiya); (c) Profil rasmlari va sarlavha tasviri; (d) Foydalanuvchi tomonidan yaratilgan tarkib (xabarlar, izohlar, yoqtirishlar); (e) O‘zaro muloqot ma’lumotlari; (f) Firebase orqali nosozlik hisobotlari va tahlillar.</p>
+                <p>Biz telefon raqamlarini yoki joylashuv ma’lumotlarini yig‘maymiz.</p>
+                <p>Shuningdek, biz quyidagilarni ham yig‘amiz:</p>
+                <ul>
+                    <li><strong>Qurilma ma’lumotlari:</strong> Qurilma modeli, operatsion tizim versiyasi, qurilma identifikatorlari va tarmoq ma’lumotlari</li>
+                    <li><strong>Foydalanish bo‘yicha ma’lumotlar:</strong> Nuqtadan qanday foydalanishingiz, jumladan ilovada o‘tkazgan vaqtingiz, ishlatgan xususiyatlaringiz va o‘zaro aloqa usullaringiz</li>
+                    <li><strong>Log ma’lumotlari:</strong> Ilova xatolari, ilova ishdan chiqishlari va ilovaning umumiy ishlash samaradorligi ko‘rsatkichlari</li>
+                </ul>
+            </div>
+
+            <div id="privacy-3" class="content-block">
+                <h3>3. Ma’lumotlaringizdan qanday foydalanamiz</h3>
+                <p>Biz sizning ma’lumotlaringizdan quyidagi maqsadlarda foydalanamiz: (a) Nuqtani taqdim etish va shaxsiylashtirish; (b) Firebase Analytics yordamida foydalanish statistikasini tahlil qilish; (c) Firebase Crashlytics orqali xatolarni bartaraf etish; (d) Google AdMob vositasida reklamalarni ko‘rsatish.</p>
+                <p>Bundan tashqari, sizning ma’lumotlaringizdan quyidagi maqsadlarda foydalanamiz:</p>
+                <ul>
+                    <li>Xizmatga oid e’lonlar va yangilanishlar to‘g‘risida siz bilan aloqada bo‘lish</li>
+                    <li>So‘rovlaringizga javob berish va mijozlarga yordam ko‘rsatish xizmatini taqdim etish</li>
+                    <li>Yangi xususiyatlar, mahsulotlar va xizmatlarni ishlab chiqish va takomillashtirish</li>
+                    <li>Firibgarlikning oldini olish va xizmat ko‘rsatish shartlarimizni amalga oshirish</li>
+                    <li>Qonuniy majburiyatlarni bajarmoq</li>
+                </ul>
+            </div>
+
+            <div id="privacy-4" class="content-block">
+                <h3>4. Ma’lumotlaringizni ulashish</h3>
+                <p>Biz ma’lumotlarni quyidagilar bilan ulashamiz: (a) Firebase (nosozlik hisobotlari, tahlillar); (b) Google AdMob (reklama). <a href="https://policies.google.com/privacy">Google Maxfiylik siyosati</a>ni ko‘rib chiqing. Biz marketing maqsadlarida ma’lumotlarni boshqa uchinchi tomonlar bilan ulashmaymiz.</p>
+                <p>Biz quyidagi holatlarda ham ma’lumotlarni ulashishimiz mumkin:</p>
+                <ul>
+                    <li>Bizning nomimizdan xizmatlarni amalga oshiruvchi tashkilotlar bilan</li>
+                    <li>Qonun tomonidan talab qilingan hollarda yoki huquqiy jarayonlarga javob tariqasida</li>
+                    <li>ChuqurTech, foydalanuvchilarimiz yoki jamiyatning huquqlari, mulki yoxud xavfsizligini himoya qilish maqsadida</li>
+                    <li>Aktivlarimizning barchasi yoki bir qismini qo‘shib olish, sotib olish yoki sotish bilan bog‘liq holatlarda</li>
+                </ul>
+            </div>
+
+            <div id="privacy-5" class="content-block">
+                <h3>5. Tanlovlaringiz va nazorat imkoniyatlaringiz</h3>
+                <p>Siz ilova orqali o‘z ma’lumotlaringizga (xabarlar va rasmlarni ham o‘z ichiga olgan holda) kirishingiz, ularni yangilashingiz yoki o‘chirishingiz mumkin. O‘chirilgan ma’lumotlar serverlarimizdan butunlay olib tashlanadi.</p>
+            </div>
+
+            <div id="privacy-6" class="content-block">
+                <h3>6. Xavfsizlik</h3>
+                <p>Biz sizning ma’lumotlaringizni himoya qilish uchun oqilona choralar ko‘ramiz, ammo internet orqali hech qanday usul 100% xavfsiz emas.</p>
+                <p>Xavfsizlik amaliyotlarimiz ma’lumotlarni shifrlangan holda saqlash, himoyalangan tarmoq tuzilishi, muntazam xavfsizlik tekshiruvlari va xodimlarimiz uchun qat’iy kirish nazoratini o‘z ichiga oladi. Biroq, ruxsatsiz uchinchi shaxslar hech qachon xavfsizlik choralarimizni engib o‘ta olmasligi yoki shaxsiy ma’lumotlaringizdan noto‘g‘ri maqsadlarda foydalana olmasligiga kafolat bera olmaymiz.</p>
+            </div>
+
+            <div id="privacy-7" class="content-block">
+                <h3>7. Bolalar maxfiyligi</h3>
+                <p>Nuqta 13 yoshdan yuqori foydalanuvchilar uchun mo‘ljallangan. Biz 13 yoshdan kichik bolalarning ma’lumotlarini ataylab to‘plamaymiz va agar bunday ma’lumotlar aniqlansa, ularni darhol o‘chirib tashlaymiz.</p>
+                <p>Agar siz ota-ona yoki vasiy bo‘lsangiz va bizning 13 yoshdan kichik boladan ma’lumot to‘plaganimizga ishonchingiz komil bo‘lsa, iltimos, darhol <a href="mailto:nuqta@chuqurtech.uz">nuqta@chuqurtech.uz</a> manziliga murojaat qiling. Biz zudlik bilan bunday ma’lumotlarni o‘chirib tashlash va bolaning hisobini yopish choralarini ko‘ramiz.</p>
+            </div>
+
+            <div id="privacy-8" class="content-block">
+                <h3>8. Xalqaro ma’lumotlarni uzatish</h3>
+                <p>Ma’lumotlar O‘zbekistondan tashqariga (masalan, AQShdagi Google serverlariga) uzatilishi va ushbu siyosatga muvofiq ravishda qayta ishlanishi mumkin.</p>
+                <p>Shaxsiy ma’lumotlarni O‘zbekistondan tashqariga uzatganimizda, ularning ushbu Maxfiylik siyosatiga muvofiq himoyalanishini ta’minlash maqsadida tegishli xavfsizlik choralarini ko‘ramiz. Bu choralar standart ma’lumotlarni himoya qilish shartlarini o‘z ichiga olgan ma’lumot uzatish shartnomalarini qamrab olishi mumkin.</p>
+            </div>
+
+            <div id="privacy-9" class="content-block">
+                <h3>9. Ushbu siyosatga kiritiladigan o‘zgartirishlar</h3>
+                <p>Biz ushbu siyosatni yangilashimiz mumkin va o‘zgarishlarni shu yerda e’lon qilamiz. O‘zgarishlardan so‘ng xizmatdan foydalanishni davom ettirishingiz yangi shartlarni qabul qilganingizni anglatadi.</p>
+                <p>Biz ushbu Maxfiylik siyosatidagi muhim o‘zgarishlar haqida sizni ilova yoki elektron pochta orqali xabardor qilamiz. Maxfiylik amaliyotimiz to‘g‘risidagi eng so‘nggi ma’lumotlardan xabardor bo‘lish uchun ushbu sahifani vaqti-vaqti bilan ko‘zdan kechirib turishingizni tavsiya etamiz.</p>
+            </div>
+
+            <div id="privacy-10" class="content-block">
+                <h3>10. Ma’lumotlarni himoya qilish choralari</h3>
+                <p>Biz sizning shaxsiy ma’lumotlaringiz xavfsizligini ta’minlash maqsadida turli xil himoya choralarini qo‘llaymiz. Bular jumlasiga ma’lumotlarni shifrlash, xavfsizlik devorlari va himoyalangan server qurilmalari kiradi.</p>
+                <p>Xodimlarimiz maxfiylik va ma’lumotlar xavfsizligining ahamiyati bo‘yicha maxsus tayyorgarlikdan o‘tkazilgan bo‘lib, shaxsiy ma’lumotlarga faqat o‘z vazifalarini bajarish uchun zarur bo‘lgan xodimlarning kirishi cheklangan. Biz tizimlarga ruxsatsiz kirishning oldini olish maqsadida ma’lumotlarni to‘plash, saqlash va qayta ishlash amaliyotlarimizni muntazam ravishda tahlil qilib boramiz.</p>
+            </div>
+
+            <div id="privacy-11" class="content-block">
+                <h3>11. Ma’lumotlarni saqlash muddati</h3>
+                <p>Biz sizning shaxsiy ma’lumotlaringizni ushbu Maxfiylik siyosatida ko‘rsatilgan maqsadlarni amalga oshirish uchun zarur bo‘lgan muddatgacha saqlaymiz. Agar qonun tomonidan uzoqroq saqlash muddati talab qilinsa yoki ruxsat berilsa, shu muddatga amal qilamiz.</p>
+                <p>Sizning ma’lumotlaringizdan foydalanishga ehtiyoj qolmaganda va qonuniy yoki me’yoriy majburiyatlarimizga rioya qilish uchun ularni saqlashga zarurat bo‘lmaganda, biz ularni tizimlarimizdan o‘chirib tashlaymiz yoki shaxsingizni aniqlash imkoniyatini yo‘qotish maqsadida shaxssizlantiramiz.</p>
+            </div>
+
+            <div id="privacy-12" class="content-block">
+                <h3>12. App Store va Google Play ma’lumotlardan foydalanish amaliyotlari</h3>
+                <p>Siz App Store yoki Google Play Store’dan Nuqta ilovasini yuklab olayotganingizda, bu platformalar yuklab olish jarayonining bir qismi sifatida siz va qurilmangiz haqida ma’lum ma’lumotlarni to‘plashi mumkin. Bunday ma’lumotlar to‘plash Apple va Google’ning tegishli maxfiylik siyosatlari asosida boshqariladi.</p>
+                <p>Nuqta foydalanuvchilar maxfiyligi va ma’lumotlarni yig‘ish bo‘yicha Apple App Store hamda Google Play Store ko‘rsatmalariga to‘liq rioya qiladi. Biz ushbu do‘konlarda taqdim etayotgan Ilova maxfiyligi haqidagi ma’lumotlar, ushbu Maxfiylik siyosatida bayon etilgan ma’lumotlar bilan ishlash amaliyotimizni aniq aks ettiradi.</p>
+                <p>Bu ilovalar do‘konlarining sizning ma’lumotlaringizni qanday boshqarishi haqida ko‘proq ma’lumot olish uchun quyidagilar bilan tanishing:</p>
+                <ul>
+                    <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple maxfiylik siyosati</a></li>
+                    <li><a href="https://policies.google.com/privacy" target="_blank">Google maxfiylik siyosati</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Bog‘lanish ma’lumotlari</h2>
+            <p>Xizmat ko‘rsatish shartlarimiz yoki Maxfiylik siyosatimiz haqida savollaringiz bo‘lsa, iltimos, biz bilan bog‘laning:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:nuqta@chuqurtech.uz">nuqta@chuqurtech.uz</a></li>
+            </ul>
+        </section>
+    </div>
+    <a href="#" class="back-to-top">↑</a>
+    <footer>
+        <p>&copy; 2025 ChuqurTek. Barcha huquqlar himoyalangan.</p>
+        <p><a href="#terms" style="color: #fff; margin: 0 10px;">Qoidalar</a> | <a href="#privacy" style="color: #fff; margin: 0 10px;">Maxfiylik</a> | <a href="#contact" style="color: #fff; margin: 0 10px;">Bog‘lanish</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (this.getAttribute('href') === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.querySelector('.back-to-top').style.display = "block";
+            } else {
+                document.querySelector('.back-to-top').style.display = "none";
+            }
+        };
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.querySelector('.back-to-top').style.display = "block";
+            } else {
+                document.querySelector('.back-to-top').style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
